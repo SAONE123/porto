@@ -2,63 +2,223 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 font-sans selection:bg-blue-100 dark:selection:bg-blue-900">
+      <main className="max-w-4xl mx-auto py-20 px-6 lg:px-8 space-y-24">
+        <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+          <div className="flex-1 space-y-6 text-center md:text-left">
+            <h1 className="text-5xl font-bold tracking-tight">
+              Halo, Saya{" "}
+              <span className="text-blue-600 dark:text-blue-400">
+                Alfian Nurdienansyah Setyobudi
+              </span>
+            </h1>
+            <p className="text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Software Engineer yang berdedikasi membangun aplikasi web modern,
+              performan, dan berpusat pada pengguna.
+            </p>
+            <div className="flex justify-center md:justify-start gap-4">
+              <a
+                href="https://wa.me/6285691941488"
+                className="px-6 py-3 bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 rounded-full font-medium hover:opacity-90 transition shadow-lg"
+              >
+                Hubungi Saya
+              </a>
+            </div>
+          </div>
+          <div className="relative w-48 h-48 md:w-64 md:h-64 shrink-0 shadow-2xl rounded-2xl overflow-hidden ring-4 ring-white dark:ring-zinc-800">
+            <div className="absolute inset-0 bg-zinc-200 animate-pulse dark:bg-zinc-800" />
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/mypic.png"
+              alt="Foto Profil"
+              fill
+              className="object-cover transition-all duration-500"
+              priority
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2">
+            Tentang Saya
+          </h2>
+          <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed text-justify">
+            I am a software development professional with a focus on modern
+            ecosystems. I have experience transforming complex ideas into
+            elegant and functional digital solutions. I prioritize clean,
+            well-documented code and scalable architecture. I'm a graduate of
+            Universitas Sultan Ageng Tirtayasa, majoring in Agribusiness. I had
+            the opportunity to complete the Kampus Merdeka Program, focusing on
+            Web Development. With my existing background in coding, I am eager
+            to contribute my skills to professional projects and continue
+            growing as a developer.
+          </p>
+        </section>
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2">
+            Bidang yang Dikuasai
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              "React / Next.js",
+              "Node.js",
+              "TypeScript",
+              "Tailwind CSS",
+              "PostgreSQL",
+              "Cloud Infrastructure",
+              "API Design",
+              "UI/UX Development",
+              "NoSQL Databases",
+              "AWS /AZURE",
+              "React Native",
+              "Web Optimization",
+            ].map((skill) => (
+              <div
+                key={skill}
+                className="p-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl text-center font-medium shadow-sm hover:border-blue-500 transition-colors"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2">
+            Pendidikan
+          </h2>
+          <div className="space-y-8">
+            {[
+              {
+                school: "UNIVERSITAS SULTAN AGENG TIRTAYASA",
+                degree: "Sarjana AGRIBISNIS",
+                period: "2020 — 2024",
+              },
+            ].map((edu, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row md:justify-between gap-2"
+              >
+                <div>
+                  <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
+                    {edu.school}
+                  </h3>
+                  <p className="text-zinc-600 dark:text-zinc-400 text-lg">
+                    {edu.degree}
+                  </p>
+                </div>
+                <span className="text-zinc-500 font-medium italic">
+                  {edu.period}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2">
+            Pengalaman Kerja
+          </h2>
+          <div className="space-y-8">
+            {[
+              {
+                role: "Software Developer (Freelance/Project)",
+                company: "Self-Employed",
+                period: "2023 — Sekarang",
+                description:
+                  "Mengembangkan berbagai aplikasi web menggunakan React dan Next.js. Fokus pada optimasi performa dan integrasi API pihak ketiga untuk meningkatkan pengalaman pengguna.",
+              },
+            ].map((job, index) => (
+              <div
+                key={index}
+                className="flex flex-col md:flex-row md:justify-between gap-2"
+              >
+                <div className="max-w-2xl">
+                  <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
+                    {job.role}
+                  </h3>
+                  <p className="text-zinc-600 dark:text-zinc-400 text-lg font-medium">
+                    {job.company}
+                  </p>
+                  <p className="text-zinc-600 dark:text-zinc-400 mt-2 leading-relaxed text-justify">
+                    {job.description}
+                  </p>
+                </div>
+                <span className="text-zinc-500 font-medium italic">
+                  {job.period}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="space-y-6">
+          <h2 className="text-3xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2">
+            Sertifikat
+          </h2>
+          <div className="grid gap-4">
+            {[
+              {
+                name: "ALGORITMA TINGKAT LANJUT",
+                issuer: "Hacktiv8 Indonesia",
+                date: "2023",
+                file: "/serti/algoritma.pdf",
+                image: "/serti/algoritma.png",
+              },
+              {
+                name: "Professional Full Stack Developer",
+                issuer: "Kampus Merdeka ",
+                date: "2023",
+                file: "/serti/Webdev.pdf",
+                image: "/serti/Webdev.png",
+              },
+              {
+                name: "CSS Materialize",
+                issuer: "Hacktiv8 Indonesia",
+                date: "2023",
+                file: "/serti/CSS.pdf",
+                image: "/serti/CSS.png",
+              },
+              {
+                name: "Document Object Model (DOM)",
+                issuer: "Hacktiv8 Indonesia",
+                date: "2023",
+                file: "/serti/DOM.pdf",
+                image: "/serti/DOM.png",
+              },
+            ].map((cert, index) => (
+              <a
+                key={index}
+                href={cert.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col sm:flex-row sm:items-center gap-6 p-4 bg-zinc-100 dark:bg-zinc-900/50 rounded-xl border border-transparent hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all hover:shadow-md"
+              >
+                <div className="relative w-full sm:w-32 h-44 sm:h-20 shrink-0 rounded-lg overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-white p-1">
+                  <Image
+                    src={cert.image}
+                    alt={`Preview ${cert.name}`}
+                    fill
+                    className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+
+                <div className="flex-1">
+                  <h3 className="font-bold text-lg group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {cert.name}
+                  </h3>
+                  <p className="text-zinc-500">{cert.issuer}</p>
+                </div>
+
+                <span className="text-blue-600 dark:text-blue-400 font-bold bg-blue-50 dark:bg-blue-900/30 px-3 py-1 rounded-md text-sm self-start sm:self-center">
+                  {cert.date}
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        <footer className="pt-20 text-center text-zinc-500 text-sm">
+          <p>© {new Date().getFullYear()} Alfian Nurdienansyah Setyobudi</p>
+        </footer>
       </main>
     </div>
   );
