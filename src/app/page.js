@@ -13,8 +13,15 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              Software Engineer yang berdedikasi membangun aplikasi web modern,
-              performan, dan berpusat pada pengguna.
+              Software Engineer | Web Developer | Database Management | Cloud
+              Infrastructure
+            </p>
+            <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              Saya adalah seorang profesional pengembangan perangkat lunak
+              dengan fokus pada ekosistem modern. Saya memiliki pengalaman dalam
+              mengubah ide kompleks menjadi solusi digital yang elegan dan
+              fungsional. Saya mengutamakan kode yang bersih, terdokumentasi
+              dengan baik, dan arsitektur yang dapat diskalakan.
             </p>
             <div className="flex justify-center md:justify-start gap-4">
               <a
@@ -42,15 +49,17 @@ export default function Home() {
             Tentang Saya
           </h2>
           <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed text-justify">
-            I am a software development professional with a focus on modern
-            ecosystems. I have experience transforming complex ideas into
-            elegant and functional digital solutions. I prioritize clean,
-            well-documented code and scalable architecture. I'm a graduate of
-            Universitas Sultan Ageng Tirtayasa, majoring in Agribusiness. I had
-            the opportunity to complete the Kampus Merdeka Program, focusing on
-            Web Development. With my existing background in coding, I am eager
-            to contribute my skills to professional projects and continue
-            growing as a developer.
+            I am a software developer with experience building modern web
+            applications and digital solutions. I enjoy turning ideas into
+            applications that are easy to use, reliable, and well-organized. I
+            focus on writing clean, maintainable code and creating systems that
+            can grow as needed. I have agraduated from Universitas Sultan Ageng
+            Tirtayasa with a degree in Agribusiness. During my studies, I joined
+            the Kampus Merdeka Program, where I focused on Web Development. This
+            experience helped me strengthen my programming skills and gain
+            practical experience in software development.I look forward to
+            expanding my experience, improving my technical skills, and
+            contributing to projects that create value for users.
           </p>
         </section>
         <section className="space-y-6">
@@ -64,6 +73,8 @@ export default function Home() {
               "TypeScript",
               "Tailwind CSS",
               "PostgreSQL",
+              "MongoDB",
+              "MySQL",
               "Cloud Infrastructure",
               "API Design",
               "UI/UX Development",
@@ -122,9 +133,23 @@ export default function Home() {
               {
                 role: "Software Developer (Freelance/Project)",
                 company: "Self-Employed",
-                period: "2023 — Sekarang",
+                period: "2022 — Sekarang",
                 description:
                   "Mengembangkan berbagai aplikasi web menggunakan React dan Next.js. Fokus pada optimasi performa dan integrasi API pihak ketiga untuk meningkatkan pengalaman pengguna.",
+              },
+              {
+                role: "Database Management (Freelance)",
+                company: "Infinityfree Hosting",
+                period: "February 2024 - May 2024",
+                description:
+                  "Membantu mengatur dan memelihara database untuk berbagai proyek, memastikan integritas data dan efisiensi query.",
+              },
+              {
+                role: "Digital Transformation Company (Project)",
+                company: "Secret",
+                period: "March 2025 - September 2025",
+                description:
+                  "Mendigitalkan sistem mamagement dan pembiayaan perusahaan dari manual ke digital, termasuk pembuatan aplikasi berbasis web untuk mempermudah proses internal perusahaan.",
               },
             ].map((job, index) => (
               <div
