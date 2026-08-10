@@ -138,13 +138,6 @@ export default function Home() {
                   "Mengembangkan berbagai aplikasi web menggunakan React dan Next.js. Fokus pada optimasi performa dan integrasi API pihak ketiga untuk meningkatkan pengalaman pengguna.",
               },
               {
-                role: "Database Management (Freelance)",
-                company: "Infinityfree Hosting",
-                period: "February 2024 - May 2024",
-                description:
-                  "Membantu mengatur dan memelihara database untuk berbagai proyek, memastikan integritas data dan efisiensi query.",
-              },
-              {
                 role: "Digital Transformation Company (Project)",
                 company: "Secret",
                 period: "March 2025 - September 2025",
